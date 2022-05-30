@@ -10,7 +10,7 @@
     <title>Mi portafolio | Martin Setaro - Developer</title>
 </head>
 <body>
-    <header class="header">
+    <header id="inicio" class="header">
 
         <nav class="navegador">
             <a href="#">Inicio</a>
@@ -22,6 +22,7 @@
         <div class="nombre">
             <h1>Martin Setaro</h1>
             <p>Soy un desarrollador web que hace foco en el detalle, los diseños simples, accesibles y adaptables.</p>
+            <a href="./assets/cvmartinnuevo2022.pdf" download="cvMartinSetaro2022">Descarga CV</a>
         </div>
         <div class="imagen_portfolio">
           <img src="./img/porta3.png" alt="img" title="img"/>
@@ -37,25 +38,114 @@
         <h2 data-aos="flip-up" data-aos-duration="1000" >Habilidades</h2>
         <p>Estas son las tecnologías con las cuales me manejo:</p>
         <div class="skills">
-            <img data-aos="zoom-out" data-aos-duration="1000" src="./img/html5.png" alt="html5" title="html5"/>
-            <img data-aos="zoom-out" data-aos-duration="1000" src="./img/css-3.png" alt="css" title="css"/>
-            <img data-aos="zoom-out" data-aos-duration="1000" src="./img/bootstrap.png" alt="bootstrap" title="bootstrap"/>
-            <img data-aos="zoom-out" data-aos-duration="2500" src="./img/sass.png" alt="sass" title="sass"/>
-            <img data-aos="zoom-out" data-aos-duration="2500" src="./img/figma.png" alt="figma" title="figma"/>
-            <img data-aos="zoom-out" data-aos-duration="2500" src="./img/github.png" alt="github" title="github"/>
-            <img data-aos="zoom-out" data-aos-duration="3500" src="./img/js.png" alt="javascript" title="javascript"/>
-            <img data-aos="zoom-out" data-aos-duration="3500" src="./img/react.png" alt="react" title="react"/>
-            <img data-aos="zoom-out" data-aos-duration="3500" src="./img/milkshake.png" alt="gulp" title="gulp"/>
+            <img data-aos="zoom-out" src="./img/html5.png" alt="html5" title="html5"/>
+            <img data-aos="zoom-out" src="./img/css-3.png" alt="css" title="css"/>
+            <img data-aos="zoom-out" src="./img/bootstrap.png" alt="bootstrap" title="bootstrap"/>
+            <img data-aos="zoom-out" src="./img/sass.png" alt="sass" title="sass"/>
+            <img data-aos="zoom-out" src="./img/figma.png" alt="figma" title="figma"/>
+            <img data-aos="zoom-out" src="./img/github.png" alt="github" title="github"/>
+            <img data-aos="zoom-out" src="./img/js.png" alt="javascript" title="javascript"/>
+            <img data-aos="zoom-out" src="./img/react.png" alt="react" title="react"/>
+            <img data-aos="zoom-out" src="./img/milkshake.png" alt="gulp" title="gulp"/>
         </div>
 
     </section>
+    <section class="proyectos">
+        <h2 data-aos="flip-up" data-aos-duration="1000">Mis proyectos</h2>
+        <div class="contenedor_proyectos">
+        <div class="info_proyectos">
+           <h2 class="info_titulo"><span>01.</span> Cine Home</h2>
+           <p class="info_parrafo">Se trata de un proyecto echo en React y base de datos en Firebase,
+               tienda virtual para la compra de peliculas en formato Blue-ray y DVD.
+           </p>
+           <h3>React Js - Sass - Netlify - Firebase</h3>
+          <a href="https://sitecinehome.netlify.app/" target="_blank" >Cine Home</a>
+        </div>
+        <div class="imagen_proyecto">
+         <img src="./img/cinehome.png" alt="img1" title="img1"/>
+         <div class="detras_imagen"></div>
+        </div>
+        </div>
+        <div class="contenedor_proyectos">
+            <div class="info_proyectos">
+               <h2 class="info_titulo"><span>02.</span> Rock festival and Dj</h2>
+               <p class="info_parrafo">Página web con información sobre eventos musicales locales, con timeline
+                que muestra dias y horarios , tambíen con precios de diferentes eventos.
+               </p>
+               <h3>JavaScript - Sass - GitHub - Gulp </h3>
+              <a href="https://martinsetaro.github.io/rock-festival-music/" target="_blank" >Rock and Festival</a>
+            </div>
+            <div class="imagen_proyecto">
+             <img src="./img/rockfestival.png" alt="img1" title="img1"/>
+             <div class="detras_imagen"></div>
+            </div>
+            </div>
+            <div class="contenedor_proyectos">
+                <div class="info_proyectos">
+                   <h2 class="info_titulo"><span>03.</span> Garden Spices</h2>
+                   <p class="info_parrafo">Página tipo e-commerce, venta de especies y productos de nivel internacional,
+                       formulario de contacto y venta mayorista.
+                   </p>
+                   <h3>React Js - Sass - Github - Firebase </h3>
+                  <a href=# target="_blank" >En construccion</a>
+                </div>
+                <div class="imagen_proyecto">
+                 <img src="./img/garden.png" alt="img1" title="img1"/>
+                 <div class="detras_imagen"></div>
+                </div>
+                </div>
+                <div class="contenedor_proyectos">
+                    <div class="info_proyectos">
+                       <h2 class="info_titulo"><span>04.</span> Radio Activa</h2>
+                       <p class="info_parrafo">Página web de emisora de radio, con secciones, deportes,espectaculos, y sección
+                           de podCast.
+                       </p>
+                       <h3>JavaScript - Sass - Github - Gulp </h3>
+                      <a href='https://martinsetaro.github.io/radioactiva/' target="_blank" >Radio Activa</a>
+                    </div>
+                    <div class="imagen_proyecto">
+                     <img src="./img/radioactiva.png" alt="img1" title="img1"/>
+                     <div class="detras_imagen"></div>
+                    </div>
+                    </div>
+    </section>
+    <section class="contactos">
+        <h2>Contactame</h2>
+        <p>¡No dudes en contactarme por cualquier consulta! Los enlaces a mis redes y mi email están abajo.</p>
+        
+        <form class="formulario" >
+            
+            <input class="input_info" type="text"  placeholder="Nombre" required>
+            
+            <input class="input_info2"  type="email"  placeholder="Email" required>
+           
+            <textarea class="textArea" id="mensaje" placeholder="Mensaje" required></textarea>
+            <input class="btn_submit" type="submit" value="Enviar">
+
+        </form>
+    
+    </section>
+    <footer class="footer">
+        <div class="sociales">
+            <a href="https://github.com/martinsetaro" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/martin-setaro-16068b181/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+
+        </div>
+        <div class="correo">
+            <h3>Lordsesony@gmail.com</h3>
+            <a href="#inicio" class="link_arriba"><ion-icon name="caret-up-circle-outline"></ion-icon></a>
+        </div>
+    </footer>
     
 
 
-
+<script src="js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
         AOS.init();
       </script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
