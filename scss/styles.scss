@@ -1,0 +1,208 @@
+/**** variables ***/
+$colorNegro:#3d3d3d;
+$colorNaranja:#C65A05;
+
+$fuenteTitulos:'Ubuntu', sans-serif;
+
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+ 
+  body
+  {
+      background-color:rgb(38,41,36);
+  }
+
+  /*** header ***/ 
+  .header 
+  {
+      width: 100%;
+      height: 8rem;
+      border-bottom:.2rem solid #3f3f3f;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+  }
+
+  /**** navegador ***/ 
+  .navegador 
+  {
+      a 
+      {
+          font-family: $fuenteTitulos;
+          font-size: 3rem;
+          text-decoration: none;
+          color: #6f6f6f;
+          margin-right: 3rem;
+          padding: 0.5rem 1.2rem;
+          position: relative;
+      }
+  }
+
+  .navegador a:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 1s ease;
+    
+  }
+  .navegador a:hover:before {
+  width: 100%;
+  
+  }
+  .navegador a:hover{
+      color: tomato;
+  }
+
+
+
+
+
+
+
+
+
+  /********* seccion uno ********/ 
+  .section_uno 
+  {
+      width: 100%;
+      height: 50rem;
+      display: flex;
+      
+  }
+  .nombre 
+  {
+      width: 100%;
+      height: 50rem;
+      display: flex;
+      flex-direction: column;
+      padding-left:2rem;
+      h1 
+      {
+          font-family: $fuenteTitulos;
+          font-size: 14rem;
+          font-weight: 500;
+          text-align: left;
+          text-transform: uppercase;
+          
+          background: linear-gradient(90deg, rgba(131,58,180,1) 20%, rgba(253,29,29,1) 
+          59%, rgba(252,176,69,1) 100%);
+          -webkit-background-clip:text;
+          color: transparent;
+          margin-bottom: 0;
+          margin-top: 4rem;
+          
+            
+      }
+      p 
+      {
+          font-size: 2.4rem;
+          text-align: left;
+          color:#ffffff;
+          font-family: $fuenteTitulos;
+      }
+      
+  }
+  .imagen_portfolio 
+  {
+    width: 80%;
+    height: 50rem;
+    display: flex;
+    place-items: center;
+    img 
+    {
+        width:10rem;
+        height: 20rem;
+    }
+  }
+  /*** seccion dos ****/ 
+  .section_dos
+  {
+    width: 100%;
+    height: 50rem;
+    background-color:$colorNaranja ;
+    clip-path: polygon(0px 13%, 100% 0px, 100% 100%, 0% 100%);
+    margin-top: 10rem;
+    padding-top: 5rem;
+    h2 
+    {
+        font-family: $fuenteTitulos;
+        text-transform: uppercase;
+        font-size: 8rem;
+        text-align: center;
+        color: #ffffff;
+        text-align: center;
+    }
+    p 
+    {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      color: #ffffff;
+      font-size: 2.4rem;
+     margin: 0 auto;
+      width: 70rem;
+    }
+  }
+
+  /******* seccion tres ***/ 
+  .section_tres 
+  {
+      width: 100%;
+      height: 80rem;
+      h2 
+      {
+        font-family: $fuenteTitulos;
+        text-transform: uppercase;
+        font-size: 8rem;
+        text-align: center;
+        color: #ffffff;
+        text-align: center;
+      }
+      p 
+      {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #ffffff;
+        font-size: 2.4rem;
+       margin: 0 auto;
+        width: 70rem;
+      }
+  }
+  .section_tres .skills 
+  {
+      width: 50%;
+      height: 70rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 6rem;
+      margin: 9rem auto;
+      img 
+      {
+          width: 15rem;
+          height: 15rem;
+          padding: 2rem;
+          
+          
+
+
+      }
+  }
+  .section_tres .skills img:hover 
+  {
+      
+      box-shadow: .6rem .6rem .2rem $colorNaranja;
+      transform: scale(1.1);
+      
+  }
