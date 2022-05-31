@@ -14,8 +14,8 @@
 
         <nav class="navegador">
             <a href="#">Inicio</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contacto</a>
+            <a href="#project">Proyectos</a>
+            <a href="#contact">Contacto</a>
         </nav>
     </header>
     <section class="section_uno">
@@ -25,7 +25,7 @@
             <a href="./assets/cvmartinnuevo2022.pdf" download="cvMartinSetaro2022">Descarga CV</a>
         </div>
         <div class="imagen_portfolio">
-          <img src="./img/porta3.png" alt="img" title="img"/>
+          <img src="./img/fotoperfil.png" alt="img" title="img"/>
         </div>
        
 
@@ -50,7 +50,7 @@
         </div>
 
     </section>
-    <section class="proyectos">
+    <section id="project" class="proyectos">
         <h2 data-aos="flip-up" data-aos-duration="1000">Mis proyectos</h2>
         <div class="contenedor_proyectos">
         <div class="info_proyectos">
@@ -109,18 +109,18 @@
                     </div>
                     </div>
     </section>
-    <section class="contactos">
+    <section id="contact" class="contactos">
         <h2>Contactame</h2>
         <p>¡No dudes en contactarme por cualquier consulta! Los enlaces a mis redes y mi email están abajo.</p>
         
-        <form class="formulario" >
+        <form name="formulario_contacto" netlify class="formulario" >
             
-            <input class="input_info" type="text"  placeholder="Nombre" required>
+            <input id="name" name="name" class="input_info" type="text"  placeholder="Nombre" required>
             
-            <input class="input_info2"  type="email"  placeholder="Email" required>
+            <input id="mail" name="mail" class="input_info2"  type="email"  placeholder="Email" required>
            
-            <textarea class="textArea" id="mensaje" placeholder="Mensaje" required></textarea>
-            <input class="btn_submit" type="submit" value="Enviar">
+            <textarea id="message" name="message" class="textArea" id="mensaje" placeholder="Mensaje" required></textarea>
+            <input class="btn_submit" type="submit" value="Enviar"/>
 
         </form>
     
@@ -132,7 +132,7 @@
 
         </div>
         <div class="correo">
-            <h3>Lordsesony@gmail.com</h3>
+            <a href="mailto:lordsesony@gmail.com"><h3>Lordsesony@gmail.com</h3></a>
             <a href="#inicio" class="link_arriba"><ion-icon name="caret-up-circle-outline"></ion-icon></a>
         </div>
     </footer>

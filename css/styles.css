@@ -34,21 +34,6 @@ body {
   position: relative;
 }
 
-.navegador a:before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 0px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 1s ease;
-}
-
-.navegador a:hover:before {
-  width: 100%;
-}
-
 .navegador a:hover {
   color: tomato;
 }
@@ -112,10 +97,33 @@ body {
   height: 50rem;
   display: flex;
   place-items: center;
+  position: relative;
 }
 .imagen_portfolio img {
-  width: 10rem;
-  height: 20rem;
+  width: 60%;
+  height: 80%;
+  margin-left: 8rem;
+  border-radius: 2rem;
+}
+
+.imagen_portfolio::after {
+  content: "";
+  position: absolute;
+  width: 40rem;
+  height: 45rem;
+  border: 0.1rem solid #2b665e;
+  margin-left: 7rem;
+  border-radius: 1rem;
+}
+
+.imagen_portfolio::before {
+  content: "";
+  position: absolute;
+  width: 35.5rem;
+  height: 40rem;
+  border: 0.1rem solid #C65A05;
+  margin-left: 8rem;
+  border-radius: 2rem;
 }
 
 /*** seccion dos ****/
@@ -313,6 +321,7 @@ body {
   color: #ffffff;
   text-align: left;
   font-size: 3.2rem;
+  padding: 0 4rem;
 }
 
 .formulario {
@@ -324,9 +333,6 @@ body {
   grid-column-gap: 0.8rem;
   grid-row-gap: 1.3rem;
   padding: 2rem 1rem;
-}
-.formulario label {
-  font-size: 3rem;
 }
 
 .formulario .input_info {
@@ -351,8 +357,9 @@ body {
   grid-row: 2/3;
   border: none;
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 2.4rem;
   outline-color: #2b665e;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn_submit {
@@ -419,6 +426,9 @@ body {
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+.correo a {
+  text-decoration: none;
 }
 
 .correo ion-icon:hover {
