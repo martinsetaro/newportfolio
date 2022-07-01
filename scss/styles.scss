@@ -31,11 +31,21 @@ html {
       display: flex;
       justify-content: center;
       padding: 2rem 1rem;
+      @media(max-width:760px){
+        width: 100%;
+      }
   }
 
   /**** navegador ***/ 
   .navegador 
   {
+    @media(max-width:760px){
+        width: 100%;
+      
+        display: flex;
+        justify-content: space-around;
+        
+    }
       a 
       {
           font-family: $fuenteTitulos;
@@ -45,6 +55,11 @@ html {
           margin-right: 3rem;
           padding: 0.5rem 1.2rem;
           position: relative;
+          @media(max-width:760px){
+           font-size: 1.5rem;
+          
+
+        }
       }
   }
 
@@ -67,6 +82,12 @@ html {
       width: 100%;
       height: 50rem;
       display: flex;
+      @media(max-width:760px){
+     width: 100%; 
+     display: flex;
+     flex-direction: column;  
+    
+    }
       
   }
   .nombre 
@@ -76,6 +97,11 @@ html {
       display: flex;
       flex-direction: column;
       padding-left:2rem;
+      @media(max-width:760px){
+        width: 100%;   
+        padding-left: 0;
+    }
+     
       h1 
       {
           font-family: $fuenteTitulos;
@@ -89,6 +115,10 @@ html {
           color: transparent;
           margin-bottom: 0;
           margin-top: 4rem;
+          @media(max-width:760px){
+          font-size: 6rem;
+          text-align: center;
+        }
           
       }
       p 
@@ -97,6 +127,9 @@ html {
           text-align: left;
           color:#ffffff;
           font-family: $fuenteTitulos;
+          @media(max-width:760px){
+          text-align: center;
+        }
       }
       a 
       {
@@ -112,6 +145,10 @@ html {
           font-family: $fuenteTitulos;
           box-shadow: .4rem .4rem .2rem #ec5cbb;
           transition: all .3s ease-in-out;
+          @media(max-width:760px){
+           margin-left: 7rem;
+        }
+          
       }
       
   }
@@ -123,39 +160,34 @@ html {
   }
   .imagen_portfolio 
   {
-    width: 80%;
-    height: 50rem;
+    width: 60%;
+    height: 60rem;
     display: flex;
     place-items: center;
     position: relative;
+    @media(max-width:760px){
+     width: 55%;
+     height: 15rem;
+     margin-top: 2rem;
+     
+     
+    }
+    
     img 
     {
         width:60%;
         height: 60%;
         margin-left: 8rem;
-        border-radius: 2rem;
+        border-radius: 50%;
+        @media(max-width:760px){
+        width: 100%;
+        height: 100%;
+        }
+       
     }
   }
-  .imagen_portfolio::after
-  {
-    content:"";
-    position: absolute;
-    width: 32rem;
-    height: 35rem;
-    border: .1rem solid #2b665e;
-    margin-left: 7rem;
-    border-radius: 1rem;
-  }
-  .imagen_portfolio::before
-  {
-      content:"";
-      position: absolute;
-      width: 26rem;
-      height: 30rem;
-      border: .1rem solid $colorNaranja;
-      margin-left: 8rem;
-      border-radius: 2rem;
-  }
+  
+  
 
 
 
@@ -170,6 +202,9 @@ html {
     clip-path: polygon(0px 13%, 100% 0px, 100% 100%, 0% 100%);
     margin-top: 10rem;
     padding-top: 5rem;
+    @media(max-width:760px){
+     width: 100%;   
+    }
     h2 
     {
         font-family: $fuenteTitulos;
@@ -178,6 +213,9 @@ html {
         text-align: center;
         color: #ffffff;
         text-align: center;
+        @media(max-width:760px){
+        font-size: 5rem;
+        }
     }
     p 
     {
@@ -187,6 +225,11 @@ html {
       font-size: 2.4rem;
      margin: 0 auto;
       width: 70rem;
+      @media(max-width:760px){
+       font-size: 2rem;
+       width: 100%;
+       padding: 1rem;;
+    }
     }
   }
 
@@ -204,6 +247,9 @@ html {
         text-align: center;
         color: #ffffff;
         text-align: center;
+        @media(max-width:760px){
+        font-size: 4rem;
+        }
       }
       p 
       {
@@ -213,6 +259,10 @@ html {
         font-size: 2.4rem;
        margin: 0 auto;
         width: 70rem;
+        @media(max-width:760px){
+          width: 100%;
+          font-size: 2rem;
+        }
       }
   }
   .section_tres .skills 
@@ -224,11 +274,21 @@ html {
       justify-content: space-around;
       gap: 6rem;
       margin: 9rem auto;
+      @media(max-width:760px){
+       width: 100%;  
+       display: flex;
+       flex-wrap: wrap;
+       gap: 2rem;
+    }
       img 
       {
           width: 10rem;
           height: 10rem;
           padding: 2rem;
+          @media(max-width:760px){
+           width: 10rem;
+           height:10rem;
+        }
           
           
           
@@ -261,6 +321,9 @@ html {
         text-align: center;
         color: $colorRosado;
         text-align: center;
+        @media(max-width:760px){
+         font-size: 5rem;
+        }
         
         
       }
@@ -271,6 +334,13 @@ html {
       height: 50rem;
       display: flex;
       margin-bottom: 20rem;
+      @media(max-width:760px){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height:70rem;
+       
+    }
       
   }
   .proyectos .info_proyectos
@@ -279,6 +349,9 @@ html {
       height: 100%;
       padding: 1rem 2rem;
       transition: all .4s ease-in-out;
+      @media(max-width:760px){
+        padding: 0;
+    }
       span 
       {
           color: #ec5cbb;
@@ -318,6 +391,9 @@ html {
 	font-family:Arial;
 	font-weight:bold;
 	text-shadow:0px -1px 0px #2b665e;
+    @media(max-width:760px){
+     font-size: 3rem;   
+    }
           
         
           
@@ -348,6 +424,11 @@ html {
       display: flex;
       place-items: center;
       position: relative;
+      @media(max-width:760px){
+       width: 100%;
+       margin-top: 10rem; 
+    }
+     
     
       
       img 
@@ -356,6 +437,10 @@ html {
           height: 70%;
           border: .6rem solid #e0723f;
           position: absolute;
+          @media(max-width:760px){
+           width: 100%;
+           height: 20rem;
+        }
           
       
           
@@ -381,6 +466,10 @@ html {
       display: flex;
       flex-direction: column;
       place-items: center;
+      @media(max-width:760px){
+       width: 100%;
+       margin-top: 50rem;
+    }
       h2 
       {
         font-family: $fuenteTitulos;
@@ -409,6 +498,12 @@ html {
       grid-row-gap: 1.3rem;
       
       padding: 2rem 1rem;
+      @media(max-width:760px){
+       width: 100%;   
+       display:flex;
+       flex-direction: column;
+
+    }
      
       
   }
@@ -468,12 +563,21 @@ html {
      height: 20rem;
      border-top: .7rem solid #C65A05;
      display: flex;
+     @media(max-width:760px){
+      width: 100%;  
+      display: flex;
+      flex-direction: column; 
+    }
  }
  .sociales 
  {
      width: 100%;
      height: 100%;
      padding: 3rem 4rem;
+     @media(max-width:760px){
+        display: flex;
+        justify-content: space-around;
+    }
      ion-icon 
      {
          color: #ec5cbb;
@@ -495,11 +599,20 @@ html {
      height: 100%;
      display: flex;
      padding: 3rem 4rem;
+     @media(max-width:760px){
+      display: flex;
+      flex-direction: column;
+     justify-content: space-around; 
+    }
      h3 
      {
          font-family: $fuenteTitulos;
          font-size: 3rem;
          color: #ffffff;
+         @media(max-width:760px){
+          font-size: 2rem;
+          text-align: center;
+        }
      }
      ion-icon 
      {
